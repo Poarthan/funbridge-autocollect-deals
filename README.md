@@ -1,0 +1,1 @@
+# funbridge-autocollect-deals
