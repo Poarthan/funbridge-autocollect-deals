@@ -4,7 +4,12 @@ from selenium.webdriver.common.by import By
 
 
 def collect_deals(user_name, user_password):
+    # For imported web driver
     driver = webdriver.Chrome()
+
+    # For locally installed web driver
+    # driver = webdriver.Firefox(executable_path='\path\to\firefox')
+
 
     driver.get("https://play.funbridge.com/home")
 
@@ -20,6 +25,23 @@ def collect_deals(user_name, user_password):
         password_box.send_keys(user_password)
         submit_button = driver.find_element(by=By.XPATH, value="//button[@type='submit']")
         submit_button.click()
+
+        try:
+            print("trying to close event popup")
+            popup_close_button = driver.find_element(by=By.XPATH, value="//button[@class='btn-close btn-close-white']")
+            popup_close_button.click()
+            driver.implicitly_wait(5)
+        except:
+            print("no event popup")
+
+
+        try:
+            print("trying to close desktop install popup")
+            popup_close_button = driver.find_element(by=By.XPATH, value="//button[@class='btn-close btn-close-green']")
+            popup_close_button.click()
+            driver.implicitly_wait(5)
+        except:
+                print("no install popup")
         
         driver.implicitly_wait(5)
     
