@@ -1,5 +1,7 @@
 # funbridge-autocollect-deals
 
+A more detailed guide for setting it up can be found here: [https://westviewbridgeclub.online/posts/funbridge-deal-autocollection/](https://westviewbridgeclub.online/posts/funbridge-deal-autocollection/)
+
 This is a script to go collect your daily gifted deals on funbridge website.
 
 First get selenium:
