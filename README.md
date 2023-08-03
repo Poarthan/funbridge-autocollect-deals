@@ -7,9 +7,7 @@ First get selenium:
 pip install selenium
 ```
 
-Then get the proper webdriver for your browser, from here: [https://www.selenium.dev/documentation/webdriver/getting\_started/install\_drivers/](https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/)
-
-The last thing you need to do before running it, is editing the script to put your username and password in the spots at the bottom where it says to: `your_username_or_email` and `your_password`. The script was designed for multiple funbridge accounts, therefore, it has an extra redudancy built in. 
+The last thing you need to do before running it, is editing the script to put your username and password in the spots at the bottom where it says to: `your_username_or_email` and `your_password`. The script was designed for multiple funbridge accounts, therefore, it has an extra redudancy built in.
 
 Then you should be able to run the script with:
 ```
